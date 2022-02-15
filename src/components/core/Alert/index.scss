@@ -1,0 +1,19 @@
+.alert {
+  display: flex;
+  width: 100%;
+  padding: $space-md;
+  border: $alert-border-base;
+  border-radius: $alert-border-radius-base;
+
+  &-info {
+    color: $info-color;
+    border-color: color.adjust($info-color, $alpha: -0.7);
+    background-color: color.adjust($info-color, $alpha: -0.8);
+  }
+
+  &-error {
+    color: $error-color;
+    border-color: color.adjust($error-color, $alpha: -0.7);
+    background-color: color.adjust($error-color, $alpha: -0.8);
+  }
+}

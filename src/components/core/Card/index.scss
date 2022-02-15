@@ -1,0 +1,8 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: $space-xs;
+  border: $card-border-base;
+  border-radius: $card-border-radius-base;
+  background-color: $background-secondary-color;
+}

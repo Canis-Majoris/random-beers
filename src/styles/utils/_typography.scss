@@ -1,0 +1,18 @@
+// font family
+$font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-secondary: serif;
+
+// sbase values
+$font-size-base: 1em;
+$text-scale-ratio: 1.2;
+$body-line-height: 1;
+
+// type scale
+$text-xs: calc($font-size-base / math.pow($text-scale-ratio, 2));
+$text-sm: calc($font-size-base / $text-scale-ratio);
+$text-md: calc($font-size-base * $text-scale-ratio);
+$text-lg: calc($font-size-base * math.pow($text-scale-ratio, 2));
+$text-xl: calc($font-size-base * math.pow($text-scale-ratio, 3));
+$text-xxl: calc($font-size-base * math.pow($text-scale-ratio, 4));
+$text-xxxl: calc($font-size-base * math.pow($text-scale-ratio, 5));

@@ -1,0 +1,11 @@
+.app-template {
+  display: flex;
+  flex-direction: column;
+
+  &-content {
+    padding: $space-md;
+    max-width: $content-width-base;
+    margin: $header-height auto $footer-height;
+    flex: 1 0;
+  }
+}

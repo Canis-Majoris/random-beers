@@ -1,0 +1,45 @@
+// breakpoints
+$grid-bp-sm: 40em;
+$grid-bp-md: 48em;
+$grid-bp-lg: 64em;
+$grid-bp-xl: 80em;
+$grid-columns: 12;
+
+$map-grid-props: (
+  '': 0,
+  'phone': $grid-bp-sm,
+  'tabled': $grid-bp-md,
+  'desktop': $grid-bp-lg,
+  'desktop-large': $grid-bp-xl,
+);
+
+// create media query
+@mixin screen($modifier, $type: min) {
+  @if ($modifier == '') {
+    @content;
+  } @else {
+    @media screen and (#{$type}-width: map.get($map-grid-props, $modifier)) {
+      @content;
+    }
+  }
+}
+
+// create column halper classes
+@mixin columns($modifier, $grid-cols) {
+  @include screen($modifier) {
+    @for $i from 1 through $grid-cols {
+      $modifier-local: '-#{$modifier}';
+      @if ($modifier == '') {
+        $modifier-local: '';
+      }
+
+      .col#{$modifier-local}-#{$i} {
+        display: block;
+        padding-left: math.div($space-md, 2);
+        padding-right: math.div($space-md, 2);
+        flex: 0 0 math.div(100, math.div($grid-cols, $i)) * 1%;
+        max-width: math.div(100, math.div($grid-cols, $i)) * 1%;
+      }
+    }
+  }
+}

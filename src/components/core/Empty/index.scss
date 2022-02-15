@@ -1,0 +1,9 @@
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: $space-md;
+  color: color.adjust($text-secondary-color, $alpha: -0.66);
+  font-size: $text-lg;
+}
