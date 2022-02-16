@@ -1,25 +1,27 @@
-import { useQuery } from 'react-query';
-import { fetchRandomBeer, FetchRandomBeerResponse } from '@Api/beer';
+import { useQuery, UseQueryResult } from 'react-query';
+import { fetchRandomBeer, RandomBeerResponse } from '@Api/beer';
 import { IBeer } from '@Types/beer';
 
 /**
- * Generates unique beer list
+ * Generates unique beer list.
  *
  * @param {number} length The length of desired list.
  * @return {list} The list of random unique beers.
  */
-
-export const getUniqueBeersList = async (length: number) => {
+export const getUniqueBeersList = async (
+  length: number
+): Promise<RandomBeerResponse[]> => {
   const uniqueBeersList: IBeer[] = [];
 
   /**
-   * Recursivly fetches beers until the desired amount is unique
+   * Recursivly fetches beers until the desired amount is unique.
    *
    * @param {number} n The remaining unique beers to fetch.
    */
   const fetchBeersUntillUniqueRec = async (n: number) => {
     if (n === 0) return;
-    const queriesListResults: FetchRandomBeerResponse[] = await Promise.all(
+
+    const queriesListResults: RandomBeerResponse[] = await Promise.all(
       [...Array(n)].map(fetchRandomBeer)
     );
 
@@ -41,13 +43,18 @@ export const getUniqueBeersList = async (length: number) => {
   );
 };
 
+export type RandomBeersQuery = (
+  length: number,
+  select?: any
+) => UseQueryResult<IBeer[], unknown>;
+
 /**
- * Custom react query for random beers
+ * Custom react query for random beers.
  *
  * @param {number} length The length of desired list.
  * @param {function} length The length of desired list.
  */
-const useRandomBeersQuery = (length: number, select?: any) =>
+const useRandomBeersQuery: RandomBeersQuery = (length, select) =>
   useQuery<IBeer[]>(['beers', 'random'], () => getUniqueBeersList(length), {
     select,
     enabled: length > 0,

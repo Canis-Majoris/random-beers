@@ -11,6 +11,8 @@ module.exports = {
       '@Routes': path.resolve(__dirname, 'src/routes'),
       '@Types': path.resolve(__dirname, 'src/types'),
       '@Api': path.resolve(__dirname, 'src/api'),
+      '@Utils': path.resolve(__dirname, 'src/utils'),
+      '@Mocks': path.resolve(__dirname, 'src/mocks'),
       '@Config': path.resolve(__dirname, 'src/config'),
     },
   },

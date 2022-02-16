@@ -1,9 +1,12 @@
-import Footer from '@Components/core/Footer';
-import Header from '@Components/core/Header';
-import AppTemplateProps from './types';
-import './index.scss'
+import { FC, ReactNode } from 'react';
+import { Header, Footer } from '@Components/core';
+import './index.scss';
 
-const AppTemplate = ({ children }: AppTemplateProps) => {
+export interface AppTemplateProps {
+  children: ReactNode;
+}
+
+const AppTemplate: FC<AppTemplateProps> = ({ children }) => {
   return (
     <div className='app-template container'>
       <Header />

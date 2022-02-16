@@ -1,48 +1,35 @@
 import { FC } from 'react';
-import { IBeer } from '@Types/beer';
-import useRandomBeersQuery from '@Queries/useRandomBeersQuery';
-import Loading from '@Components/core/Loading';
-import Alert from '@Components/core/Alert';
-import Empty from '@Components/core/Empty';
-import BeerGridItem from './item';
+import { useRandomBeersQuery } from '@Queries/beer';
+import { Loading, Alert, Empty, BeerCard } from '@Components/core';
 import './index.scss';
 
 export interface BeerGridProps {
-  items?: IBeer[];
-  loading?: boolean;
-  fetching?: boolean;
-  error?: any;
+  number?: number;
 }
 
-const BeerGrid: FC<BeerGridProps> = ({ items, loading, fetching, error }) => {
+const BeerGrid: FC<BeerGridProps> = ({ number = 30 }) => {
+  const { data, isLoading, isFetching, error } = useRandomBeersQuery(number);
+
   return (
     <section className='beer-grid'>
-      {(loading || fetching) && <Loading />}
-      {!(loading || fetching) && error && (
-        <Alert variant='error'>{error?.message}</Alert>
+      {(isLoading || isFetching) && <Loading />}
+      {!(isLoading || isFetching) && error && (
+        <Alert variant='error'>{error}</Alert>
       )}
-      {!(loading || fetching) && !error && items?.length === 0 && (
+      {!(isLoading || isFetching) && !error && data?.length === 0 && (
         <Empty>No Beers where retrieved :(</Empty>
       )}
-      <div className='row'>
-        {items?.map(({ name, id, image_url, tagline }) => (
-          <div key={id} className='col-12 col-desktop-6'>
-            <BeerGridItem name={name} tagline={tagline} image={image_url} />
-          </div>
-        ))}
-      </div>
+      {!isLoading && (
+        <div className='row'>
+          {data?.map(({ name, id, image_url, tagline }) => (
+            <div key={id} className='col-12 col-desktop-6'>
+              <BeerCard name={name} tagline={tagline} image={image_url} />
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 };
 
-export default () => {
-  const { data, isLoading, isFetching, error } = useRandomBeersQuery(30);
-  return (
-    <BeerGrid
-      items={data}
-      loading={isLoading}
-      fetching={isFetching}
-      error={error}
-    />
-  );
-};
+export default BeerGrid;

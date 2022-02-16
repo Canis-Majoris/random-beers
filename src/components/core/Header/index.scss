@@ -7,9 +7,11 @@
   align-items: center;
   height: $header-height;
   background-color: $secondary-color;
-  color: $text-color;
   z-index: 2;
+  
   h4 {
+    color: $text-secondary-color;
+    font-weight: $font-weight-base;
     text-transform: uppercase;
   }
 }

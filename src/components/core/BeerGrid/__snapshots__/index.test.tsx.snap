@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders BeerGrid component correctly 1`] = `
+"[36m<div>[39m
+  [36m<section[39m
+    [33mclass[39m=[32m\\"beer-grid\\"[39m
+  [36m>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m\\"row\\"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"card beer-card\\"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-image\\"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m\\"Test Beer\\"[39m
+              [33msrc[39m=[32m\\"https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1617716394/shape/mentalfloss/643219-gettyimages-1248993201.jpg?itok=NRWUukt9\\"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-info\\"[39m
+          [36m>[39m
+            [36m<h4[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mTest Beer[0m
+            [36m</h4>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mBeer tagline text[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"card beer-card\\"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-image\\"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m\\"Test Beer\\"[39m
+              [33msrc[39m=[32m\\"https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1617716394/shape/mentalfloss/643219-gettyimages-1248993201.jpg?itok=NRWUukt9\\"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-info\\"[39m
+          [36m>[39m
+            [36m<h4[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mTest Beer[0m
+            [36m</h4>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mBeer tagline text[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"card beer-card\\"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-image\\"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m\\"Test Beer\\"[39m
+              [33msrc[39m=[32m\\"https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1617716394/shape/mentalfloss/643219-gettyimages-1248993201.jpg?itok=NRWUukt9\\"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-info\\"[39m
+          [36m>[39m
+            [36m<h4[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mTest Beer[0m
+            [36m</h4>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mBeer tagline text[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"card beer-card\\"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-image\\"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m\\"Test Beer\\"[39m
+              [33msrc[39m=[32m\\"https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1617716394/shape/mentalfloss/643219-gettyimages-1248993201.jpg?itok=NRWUukt9\\"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-info\\"[39m
+          [36m>[39m
+            [36m<h4[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mTest Beer[0m
+            [36m</h4>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mBeer tagline text[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"card beer-card\\"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-image\\"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m\\"Test Beer\\"[39m
+              [33msrc[39m=[32m\\"https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1617716394/shape/mentalfloss/643219-gettyimages-1248993201.jpg?itok=NRWUukt9\\"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-info\\"[39m
+          [36m>[39m
+            [36m<h4[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mTest Beer[0m
+            [36m</h4>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mBeer tagline text[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"card beer-card\\"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-image\\"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m\\"Test Beer\\"[39m
+              [33msrc[39m=[32m\\"https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1617716394/shape/mentalfloss/643219-gettyimages-1248993201.jpg?itok=NRWUukt9\\"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m\\"beer-card-info\\"[39m
+          [36m>[39m
+            [36m<h4[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mTest Beer[0m
+            [36m</h4>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m\\"ellipsis\\"[39m
+            [36m>[39m
+              [0mBeer tagline text[0m
+            [36m</p>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"col-12 col-desktop-6\\"[39m
+      [36m>..."
+`;

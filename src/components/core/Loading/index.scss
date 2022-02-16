@@ -3,6 +3,7 @@
   width: $loading-size-base;
   height: $loading-size-base;
   margin-bottom: $space-md;
+
   &:after {
     content: '';
     display: block;
@@ -13,6 +14,7 @@
     border-color: $primary-color transparent $primary-color transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }
+
   @keyframes lds-dual-ring {
     0% {
       transform: rotate(0deg);

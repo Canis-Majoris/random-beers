@@ -8,9 +8,11 @@
   height: $footer-height;
   background-color: $secondary-color;
   margin-top: auto;
-  color: $text-color;
   z-index: 2;
+
   h4 {
+    color: $text-secondary-color;
+    font-weight: $font-weight-base;
     text-transform: uppercase;
   }
 }

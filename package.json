@@ -33,6 +33,20 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^@Components(.*)$": "<rootDir>/src/components$1",
+      "^@Pages(.*)$": "<rootDir>/src/pages$1",
+      "^@Styles(.*)$": "<rootDir>/src//styles$1",
+      "^@Queries(.*)$": "<rootDir>/src/queries$1",
+      "^@Routes(.*)$": "<rootDir>/src/routes$1",
+      "^@Types(.*)$": "<rootDir>/src/types$1",
+      "^@Api(.*)$": "<rootDir>/src/api$1",
+      "^@Mocks(.*)$": "<rootDir>/src/mocks$1",
+      "^@Utils(.*)$": "<rootDir>/src/utils$1",
+      "^@Config": "<rootDir>/src/config"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,6 +60,12 @@
     ]
   },
   "devDependencies": {
-    "craco-sass-resources-loader": "^1.1.0"
+    "@mswjs/data": "^0.9.0",
+    "@types/enzyme": "^3.10.11",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "craco-sass-resources-loader": "^1.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "msw": "^0.36.8"
   }
 }

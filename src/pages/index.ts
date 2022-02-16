@@ -1,1 +1,1 @@
-export { default } from './BeerGridPage';
+export { default as BeerGridPage } from './BeerGridPage';
