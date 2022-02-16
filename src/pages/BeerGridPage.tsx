@@ -1,7 +1,5 @@
-import BeerGrid from '@Components/core/BeerGrid';
+import { BeerGrid } from '@Components/core';
 
-const BeerGridPage = () => {
-  return <BeerGrid />;
-};
+const BeerGridPage = () => <BeerGrid />;
 
 export default BeerGridPage;
