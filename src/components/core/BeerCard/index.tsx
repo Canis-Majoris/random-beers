@@ -11,7 +11,7 @@ export interface BeerCardProps {
 const BeerCard: FC<BeerCardProps> = ({ image, name, tagline }) => (
   <Card className='beer-card'>
     <div className='beer-card-image'>
-      <img src={image} alt={name} />
+      <img src={image ?? './images/placeholders/placeholder-beer.png'} alt={name} />
     </div>
     <div className='beer-card-info'>
       <h4 className='ellipsis'>{name}</h4>
